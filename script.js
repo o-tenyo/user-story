@@ -1,9 +1,11 @@
-
+let submit = document.getElementById('submit');
+submit.addEventListener('click', submissionClicked);
 
 function maleUser(){
-    // if(DD>0 && DD<31 && MM>0 && MM<12){
-    //     d = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
-    //     console.log(d);
+    if(dd>0 && mm<31 && mm>0 && mm<12){
+        var birthday = new Date(dd + '/' + mm + '/' + year);
+        var d = birthday.getDay();
+        console.log(d)
         if(d==0){
             console.log('Kwasi');
         }
@@ -29,12 +31,40 @@ function maleUser(){
         console.log('Invalid Data. \nTry Again!');
     }
 }
+function femaleUser(){
+    if(DD>0 && DD<31 && MM>0 && MM<12){
+        d = ((((CC/4) -2*CC-1) + ((5*YY/4)) + ((26*(MM+1)/10))+DD)%7);
+        if(d==0){
+            console.log('Akosua');
+        }
+        else if(d==1){
+            console.log('Adwoa');
+        }
+        else if(d==2){
+            console.log('Abenaa');
+        }
+        else if(d==3){
+            console.log('Akua');
+        }
+        else if(d==4){
+            console.log('Yaa');
+        }
+        else if(d==5){
+            console.log('Afua');
+        }
+        else{
+            console.log('Ama');
+        }}
+    else{
+        console.log('Invalid Data. \nTry Again!');
+    }
+}
 
 function submissionClicked(){
     if(male===true){
         maleUser();
     }
-    else if(female===){
+    else if(female===true){
         femaleUser()
     }
 }
