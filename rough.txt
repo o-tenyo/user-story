@@ -1,0 +1,7 @@
+var dd = 02;
+var mm = 02;
+var year = 1950;
+
+var birthday = new Date(dd + '/' + mm + '/' + year);
+var day = birthday.getDay();
+console.log(day)
