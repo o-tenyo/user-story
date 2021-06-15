@@ -2,7 +2,7 @@
 #### This is the , 15-06-2021
 #### By **Johnstone Otenyo Omundi**
 ## Description
-This project entails building the landing page for my personal portfolio.
+This web application takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name.
 Live link: https://o-tenyo.github.io/user-story/
 ## Setup/Installation Requirements
 * Use any text editor such as atom or vs code
