@@ -3,7 +3,7 @@
 #### By **Johnstone Otenyo Omundi**
 ## Description
 This project entails building the landing page for my personal portfolio.
-Live link: https://o-tenyo.github.io/portfolio-landing-page/
+Live link: https://o-tenyo.github.io/user-story/
 ## Setup/Installation Requirements
 * Use any text editor such as atom or vs code
 * Preferred browser is chrome
@@ -14,6 +14,7 @@ There aren't any bugs yet, as long as you use the most compatible browsers such 
 ## Technologies Used
 * HTML - structural build
 * CSS -used for styling
+* JavaScript programming language
 
 ## Support and contact details
 Contact: johnstone.omundi@student.moringaschool.com
