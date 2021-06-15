@@ -32,8 +32,10 @@ function maleUser(){
     }
 }
 function femaleUser(){
-    if(DD>0 && DD<31 && MM>0 && MM<12){
-        d = ((((CC/4) -2*CC-1) + ((5*YY/4)) + ((26*(MM+1)/10))+DD)%7);
+    if(dd>0 && mm<31 && mm>0 && mm<12){
+        var birthday = new Date(dd + '/' + mm + '/' + year);
+        var d = birthday.getDay();
+        console.log(d)
         if(d==0){
             console.log('Akosua');
         }
