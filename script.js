@@ -1,8 +1,12 @@
 let submit = document.getElementById('submit');
 submit.addEventListener('click', submissionClicked);
 
+let dd;
+let mm;
+let yy;
+
 function maleUser(){
-    if(dd>0 && mm<31 && mm>0 && mm<12){
+    if(dd>0 && dd<31 && mm>0 && mm<12){
         var birthday = new Date(dd + '/' + mm + '/' + year);
         var d = birthday.getDay();
         console.log(d)
@@ -32,8 +36,10 @@ function maleUser(){
     }
 }
 function femaleUser(){
-    if(DD>0 && DD<31 && MM>0 && MM<12){
-        d = ((((CC/4) -2*CC-1) + ((5*YY/4)) + ((26*(MM+1)/10))+DD)%7);
+    if(dd>0 && dd<31 && mm>0 && mm<12){
+        var birthday = new Date(dd + '/' + mm + '/' + year);
+        var d = birthday.getDay();
+        console.log(d)
         if(d==0){
             console.log('Akosua');
         }
@@ -61,10 +67,16 @@ function femaleUser(){
 }
 
 function submissionClicked(){
-    if(male===true){
+    dd = document.getElementById('day').value;   //fetching dd, mm and yy values from html
+    mm = document.getElementById('month').value;
+    yy = document.getElementById('year').value;
+    console.log("djkajk");
+    if(document.getElementById('male').checked){   //check if the 'male' has been clicked/checked
+        let male = document.getElementById('male');  //assign the checked id to male variable
         maleUser();
     }
-    else if(female===true){
-        femaleUser()
+    if(document.getElementById('female').checked){    
+        let female = document.getElementById('female');
+        femaleUser();
     }
 }
