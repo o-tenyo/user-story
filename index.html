@@ -48,7 +48,7 @@
     </div>
     <div class="fill-form">
         <h2>Fill in this Form</h2>
-        <form action="" method="post">
+        <form>
             <label for="start">Day of Month:</label>
             <!-- <br> -->
             <input type="number" name="dd" id="day" placeholder="dd">
@@ -63,12 +63,12 @@
             <br><br>
             <label for="">Select Gender:</label>
             <br>
-            <input type="radio" name="gender" id="male">
+            <input type="radio" name="gender" id="male" value="male">
             <span id="male">Male</span>
-            <input type="radio" name="gender" id="female">
+            <input type="radio" name="gender" id="female" value="female">
             <span id="female">Female</span>
             <br><br>
-            <input type="submit" value="Submit" name="submit" onclick="submissionClicked()" id="submit">
+            <input type="button" value="Submit" name="submit" onclick="submissionClicked()" id="submit">
         </form>
     </div>
     <script src="./script.js"></script>
