@@ -1,5 +1,3 @@
-let submit = document.getElementById('submit');
-submit.addEventListener('click', submissionClicked);
 
 let dd;
 let mm;
@@ -7,8 +5,12 @@ let yy;
 
 function maleUser(){
     if(dd>0 && dd<31 && mm>0 && mm<12){
-        var birthday = new Date(dd + '/' + mm + '/' + year);
+        console.log(dd);
+        console.log(mm);
+        console.log(yy);
+        var birthday = new Date(dd + '/' + mm + '/' + yy);
         var d = birthday.getDay();
+        console.log(birthday)
         console.log(d)
         if(d==0){
             console.log('Kwasi');
@@ -36,11 +38,7 @@ function maleUser(){
     }
 }
 function femaleUser(){
-<<<<<<< HEAD
-    if(dd>0 && mm<31 && mm>0 && mm<12){
-=======
     if(dd>0 && dd<31 && mm>0 && mm<12){
->>>>>>> master
         var birthday = new Date(dd + '/' + mm + '/' + year);
         var d = birthday.getDay();
         console.log(d)
@@ -74,7 +72,7 @@ function submissionClicked(){
     dd = document.getElementById('day').value;   //fetching dd, mm and yy values from html
     mm = document.getElementById('month').value;
     yy = document.getElementById('year').value;
-    console.log("djkajk");
+    // console.log("djkajk");
     if(document.getElementById('male').checked){   //check if the 'male' has been clicked/checked
         let male = document.getElementById('male');  //assign the checked id to male variable
         maleUser();
@@ -84,3 +82,6 @@ function submissionClicked(){
         femaleUser();
     }
 }
+
+// let submit = document.getElementById('submit');
+// submit.addEventListener('click', submissionClicked);
