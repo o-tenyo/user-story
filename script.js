@@ -5,36 +5,36 @@ let yy;
 
 function maleUser(){
     if(dd>0 && dd<31 && mm>0 && mm<12){
-        console.log(dd);
-        console.log(mm);
-        console.log(yy);
+        console.log(`date: ${dd}`);
+        console.log(`month: ${mm}`);
+        console.log(`year: ${yy}`);
         var birthday = new Date(dd + '/' + mm + '/' + yy);
         var d = birthday.getDay();
         console.log(birthday)
-        console.log(d)
+        alert(`The calculated day is ${d}`)
         if(d==0){
-            console.log('Kwasi');
+            alert('The corresponding Akan name is Kwasi');
         }
         else if(d==1){
-            console.log('Kwadwo');
+            alert('The corresponding Akan name is Kwadwo');
         }
         else if(d==2){
-            console.log('Kwabena');
+            alert('The corresponding Akan name is Kwabena');
         }
         else if(d==3){
-            console.log('Kwaku');
+            alert('The corresponding Akan name is Kwaku');
         }
         else if(d==4){
-            console.log('Yaw');
+            alert('The corresponding Akan name is Yaw');
         }
         else if(d==5){
-            console.log('Kofi');
+            alert('The corresponding Akan name is Kofi');
         }
         else if(d==6){
-            console.log('Kwame');
+            alert('The corresponding Akan name is Kwame');
         }}
     else{
-        console.log('Invalid Data. \nTry Again!');
+        alert('Invalid Data. \nTry Again!');
     }
 }
 function femaleUser(){
@@ -43,28 +43,28 @@ function femaleUser(){
         var d = birthday.getDay();
         console.log(d)
         if(d==0){
-            console.log('Akosua');
+            alert('The corresponding Akan name is Akosua');
         }
         else if(d==1){
-            console.log('Adwoa');
+            alert('The corresponding Akan name is Adwoa');
         }
         else if(d==2){
-            console.log('Abenaa');
+            alert('The corresponding Akan name is Abenaa');
         }
         else if(d==3){
-            console.log('Akua');
+            alert('The corresponding Akan name is Akua');
         }
         else if(d==4){
-            console.log('Yaa');
+            alert('The corresponding Akan name is Yaa');
         }
         else if(d==5){
-            console.log('Afua');
+            alert('The corresponding Akan name is Afua');
         }
         else{
-            console.log('Ama');
+            alert('The corresponding Akan name is Ama');
         }}
     else{
-        console.log('Invalid Data. \nTry Again!');
+        alert('Invalid Data. \nTry Again!');
     }
 }
 
