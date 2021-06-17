@@ -83,5 +83,13 @@ function submissionClicked(){
     }
 }
 
+function logReset(event) {
+    log.textContent = `Form reset! Time stamp: ${event.timeStamp}`;
+  }
+  
+  const form = document.getElementById('form');
+  const log = document.getElementById('log');
+  form.addEventListener('reset', logReset);
+
 // let submit = document.getElementById('submit');
 // submit.addEventListener('click', submissionClicked);
