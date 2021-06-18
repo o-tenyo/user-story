@@ -1,5 +1,5 @@
 # AKAN NAMES
-#### This is the , 15-06-2021
+#### This is a web app that outputs user's Akan names, 15-06-2021
 #### By **Johnstone Otenyo Omundi**
 ## Description
 This web application takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name.
