@@ -39,9 +39,13 @@ function maleUser(){
 }
 function femaleUser(){
     if(dd>0 && dd<31 && mm>0 && mm<12){
-        var birthday = new Date(dd + '/' + mm + '/' + year);
+        console.log(`date: ${dd}`);
+        console.log(`month: ${mm}`);
+        console.log(`year: ${yy}`);
+        var birthday = new Date(dd + '/' + mm + '/' + yy);
         var d = birthday.getDay();
-        console.log(d)
+        console.log(birthday)
+        alert(`The calculated day is ${d}`)
         if(d==0){
             alert('The corresponding Akan name is Akosua');
         }
