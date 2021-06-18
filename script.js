@@ -42,7 +42,7 @@ function femaleUser(){
         console.log(`date: ${dd}`);
         console.log(`month: ${mm}`);
         console.log(`year: ${yy}`);
-        var birthday = new Date(dd + '/' + mm + '/' + yy);
+        var birthday = new Date(mm + '/' + dd + '/' + yy);
         var d = birthday.getDay();
         console.log(birthday)
         alert(`The calculated day is ${d}`)
